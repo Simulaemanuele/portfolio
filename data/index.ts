@@ -70,38 +70,40 @@ export const gridItems = [
 ];
 
 export const projects = [
+
     {
         id: 1,
-        title: "3D Solar System Planets to Explore",
-        des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-        img: "/p1.svg",
-        iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-        link: "https://github.com/adrianhajdin?tab=repositories",
-    },
-    {
-        id: 2,
-        title: "Yoom - Video Conferencing App",
-        des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-        img: "/p2.svg",
-        iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-        link: "https://github.com/adrianhajdin/zoom-clone",
-    },
-    {
-        id: 3,
-        title: "AI Image SaaS - Canva Application",
-        des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-        img: "/p3.svg",
-        iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-        link: "https://github.com/adrianhajdin/ai_saas_app",
-    },
-    {
-        id: 4,
         title: "Animated Apple Iphone 3D Website",
         des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
         img: "/p4.svg",
         iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-        link: "https://github.com/adrianhajdin/iphone",
+        link: "https://iphone15-apple-clone.netlify.app/",
     },
+    {
+        id: 2,
+        title: "Brainwave",
+        des: "Professional and modern design AI Chat website Brainwave, using Tailwind, React and Vite",
+        img: "",
+        iconLists: ["/react.svg", "/tail.svg", "/js.svg", "/vite.svg"],
+        link: "https://brainwave-look-a-like.netlify.app/"
+    },
+    {
+        id: 3,
+        title: "The World",
+        des: "An interactive 3D model builded in Three.js of the Earth",
+        img: "",
+        iconLists: ["/three.svg", "/js.svg"],
+        link: "https://three-world-3d.netlify.app/"
+    },
+    {
+        id: 4,
+        title: "Movie App",
+        des: "A react native project of a fake streaming app",
+        img: "",
+        iconLists: ["/react.svg"],
+        link: "https://github.com/Simulaemanuele/MoviesApp/tree/main"
+    }
+
 ];
 
 export const testimonials = [
