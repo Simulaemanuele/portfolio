@@ -42,6 +42,23 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
+  const leftLists = [
+    "React.js",
+    "Typescript",
+    "Node.js",
+    "Express",
+    "Next.js",
+    "Tailwind",
+  ];
+  const rightLists = [
+    "Java",
+    "Postgresql",
+    "MySQL",
+    "React Native",
+    "Three.js",
+    "GSAP Animation",
+  ];
+
   return (
     <div
       id={id?.toString()}
@@ -96,8 +113,37 @@ export const BentoGridItem = ({
           <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10">
             {title}
           </div>
+
+          {id === 2 && <GridGlobe />}
+
+          {id === 3 && (
+            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+              <div className="flex flex-col gap-1 lg:gap-1">
+                {leftLists.map((item, i) => (
+                  <span
+                    key={i}
+                    className="py-2 px-3 text-[0.5rem] opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                  >
+                    {item}
+                  </span>
+                ))}
+                <span className="py-3 px-3 rounded-lg text-center bg-[#10132E]" />
+              </div>
+
+              <div className="flex flex-col gap-1 lg:gap-1">
+                <span className="py-3 px-3 rounded-lg text-center bg-[#10132E]" />
+                {rightLists.map((item, i) => (
+                  <span
+                    key={i}
+                    className="py-2 px-3 text-[0.5rem] opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
-        {id === 2 && <GridGlobe />}
       </div>
     </div>
   );
