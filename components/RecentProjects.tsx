@@ -1,3 +1,5 @@
+"use client";
+
 import { projects } from "@/data";
 import React from "react";
 import { PinContainer } from "./ui/Pin";
@@ -16,6 +18,7 @@ const RecentProjects = () => {
             <div
               key={id + idx}
               className="sm:h-[41rem] lg:min-h-[32.5rem] h-[32rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
+              onClick={() => window.open(link, "_blank")}
             >
               <PinContainer title={link} href={link}>
                 <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10">
