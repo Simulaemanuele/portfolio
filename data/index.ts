@@ -84,7 +84,7 @@ export const projects = [
         id: 2,
         title: "Brainwave",
         des: "Professional and modern design AI Chat website Brainwave, using Tailwind, React and Vite",
-        img: "",
+        img: "/brain.svg",
         iconLists: ["/react.svg", "/tail.svg", "/js.svg", "/vite.svg"],
         link: "https://brainwave-look-a-like.netlify.app/",
         type: "webapp"
@@ -93,7 +93,7 @@ export const projects = [
         id: 3,
         title: "The World",
         des: "An interactive 3D model builded in Three.js of the Earth",
-        img: "",
+        img: "/world-3d.svg",
         iconLists: ["/three.svg", "/js.svg"],
         link: "https://three-world-3d.netlify.app/",
         type: "webapp"
@@ -102,7 +102,7 @@ export const projects = [
         id: 4,
         title: "Movie App",
         des: "A react native project of a fake streaming app",
-        img: "",
+        img: "/movie-app-smaller.svg",
         iconLists: ["/react-native.svg"],
         link: "https://github.com/Simulaemanuele/MoviesApp/tree/deploy",
         type: "mobile"

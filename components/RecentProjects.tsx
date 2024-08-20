@@ -28,7 +28,11 @@ const RecentProjects = () => {
                   <img
                     src={img}
                     alt={title}
-                    className="z-10 absolute bottom-0"
+                    className={`${
+                      img !== "/movie-app-smaller.svg"
+                        ? "z-10 bottom-0"
+                        : "w-[80%] h-[38vh] rotate-[-8deg] top-11"
+                    } absolute`}
                   />
                 </div>
                 <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
