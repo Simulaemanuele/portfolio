@@ -100,7 +100,7 @@ export const projects = [
         title: "Movie App",
         des: "A react native project of a fake streaming app",
         img: "",
-        iconLists: ["/react.svg"],
+        iconLists: ["/react-native.svg"],
         link: "https://github.com/Simulaemanuele/MoviesApp/tree/main"
     }
 
