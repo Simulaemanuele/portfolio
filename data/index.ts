@@ -78,6 +78,7 @@ export const projects = [
         img: "/p4.svg",
         iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
         link: "https://iphone15-apple-clone.netlify.app/",
+        type: "webapp"
     },
     {
         id: 2,
@@ -85,7 +86,8 @@ export const projects = [
         des: "Professional and modern design AI Chat website Brainwave, using Tailwind, React and Vite",
         img: "",
         iconLists: ["/react.svg", "/tail.svg", "/js.svg", "/vite.svg"],
-        link: "https://brainwave-look-a-like.netlify.app/"
+        link: "https://brainwave-look-a-like.netlify.app/",
+        type: "webapp"
     },
     {
         id: 3,
@@ -93,7 +95,8 @@ export const projects = [
         des: "An interactive 3D model builded in Three.js of the Earth",
         img: "",
         iconLists: ["/three.svg", "/js.svg"],
-        link: "https://three-world-3d.netlify.app/"
+        link: "https://three-world-3d.netlify.app/",
+        type: "webapp"
     },
     {
         id: 4,
@@ -101,7 +104,8 @@ export const projects = [
         des: "A react native project of a fake streaming app",
         img: "",
         iconLists: ["/react-native.svg"],
-        link: "https://github.com/Simulaemanuele/MoviesApp/tree/main"
+        link: "https://github.com/Simulaemanuele/MoviesApp/tree/main",
+        type: "mobile"
     }
 
 ];
