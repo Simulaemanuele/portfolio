@@ -8,6 +8,7 @@ import { useState } from "react";
 import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
+import { useTheme } from "next-themes";
 
 export const BentoGrid = ({
   className,
@@ -50,6 +51,7 @@ export const BentoGridItem = ({
   spareImg?: string;
 }) => {
   const [copied, setCopied] = useState(false);
+  const { theme } = useTheme();
 
   const handleCopy = () => {
     const text = "simulaemanuele@gmail.com";
@@ -87,11 +89,11 @@ export const BentoGridItem = ({
     <div
       id={id?.toString()}
       className={cn(
-        "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
+        "text-white row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 lg:shadow-2xl lg:shadow-black-200",
         className
       )}
       style={{
-        background: "rgb,(4,7,29)",
+        background: "rgb(4,7,29)",
         backgroundColor:
           "linear-gradient(90deg, rgba(4,7,29,1) 0% rgba(12,14,35,1) 100%)",
       }}

@@ -4,13 +4,18 @@ import { projects } from "@/data";
 import React from "react";
 import { PinContainer } from "./ui/Pin";
 import { FaLocationArrow } from "react-icons/fa6";
+import { useTheme } from "next-themes";
 
 const RecentProjects = () => {
+  const { theme } = useTheme();
+
   return (
-    <div className="py-20">
+    <section id="projects" className="py-20">
       <h1 className="heading">
         A small selection of{" "}
-        <span className="text-purple">recent projects</span>
+        <span className="dark:text-purple text-violet-950">
+          recent projects
+        </span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
         {projects?.map(
@@ -55,12 +60,15 @@ const RecentProjects = () => {
                     ))}
                   </div>
                   <div className="flex items-center justify-center">
-                    <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+                    <p className="flex lg:text-xl md:text-xs text-sm dark:text-purple text-violet-950">
                       {type && type === "webapp"
                         ? "Check Live Site"
                         : "Download the APK"}
                     </p>
-                    <FaLocationArrow className="ms-3" color="#CBACE9" />
+                    <FaLocationArrow
+                      className="ms-3"
+                      color={`${theme === "dark" ? "#CBACE9" : "#2e1065"}`}
+                    />
                   </div>
                 </div>
               </PinContainer>
@@ -68,7 +76,7 @@ const RecentProjects = () => {
           )
         )}
       </div>
-    </div>
+    </section>
   );
 };
 
