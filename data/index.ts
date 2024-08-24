@@ -243,14 +243,12 @@ export const approach = [
 export const socialMedia = [
     {
         id: 1,
-        img: "/git.svg",
+        imgBlack: "/gitBlack.svg",
+        imgWhite: "/gitWhite.svg"
     },
     {
         id: 2,
-        img: "/twit.svg",
-    },
-    {
-        id: 3,
-        img: "/link.svg",
+        imgBlack: "/linkBlack.svg",
+        imgWhite: "/linkWhite.svg"
     },
 ];
