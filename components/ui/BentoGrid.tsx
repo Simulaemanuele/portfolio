@@ -158,7 +158,7 @@ export const BentoGridItem = ({
                 {leftLists.map((item, i) => (
                   <span
                     key={i}
-                    className="py-2 px-3 text-[0.5rem] opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    className="py-2 px-3 text-[0.5rem] opacity-50 lg:opacity-100 rounded-lg text-center dark:bg-[#10132E] dark:text-white text-black border border-slate-800"
                   >
                     {item}
                   </span>
@@ -171,7 +171,7 @@ export const BentoGridItem = ({
                 {rightLists.map((item, i) => (
                   <span
                     key={i}
-                    className="py-2 px-3 mr-6 text-[0.5rem] opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    className="py-2 px-3 mr-6 text-[0.5rem] opacity-50 lg:opacity-100 rounded-lg text-center dark:bg-[#10132E] dark:text-white text-black border border-slate-800"
                   >
                     {item}
                   </span>
