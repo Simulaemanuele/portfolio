@@ -2,6 +2,7 @@ import React from "react";
 import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
 import Card from "./ui/Card";
 import { AceternityIcon } from "./ui/Icon";
+import { approach } from "@/data";
 
 const Approach = () => {
   return (
@@ -10,7 +11,36 @@ const Approach = () => {
         My <span className="dark:text-purple text-violet-950">approach</span>
       </h1>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
-        <Card title="Sheetal is Nisha" icon={<AceternityIcon />}>
+        {approach?.map(
+          (
+            {
+              id,
+              title,
+              order,
+              des,
+              animationSpeed,
+              containerClassName,
+              colors,
+              dotSize,
+            },
+            idx
+          ) => (
+            <Card
+              key={id + idx}
+              title={title}
+              icon={<AceternityIcon order={order} />}
+              des={des}
+            >
+              <CanvasRevealEffect
+                animationSpeed={animationSpeed}
+                containerClassName={`${containerClassName} rounded-3xl overflow-hidden`}
+                colors={colors}
+                dotSize={dotSize}
+              />
+            </Card>
+          )
+        )}
+        {/* <Card title="Sheetal is Nisha" icon={<AceternityIcon />}>
           <CanvasRevealEffect
             animationSpeed={5.1}
             containerClassName="bg-emerald-900"
@@ -26,8 +56,6 @@ const Approach = () => {
             ]}
             dotSize={2}
           />
-          {/* Radial gradient for the cute fade */}
-          <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
         </Card>
         <Card title="Munni is Aditi" icon={<AceternityIcon />}>
           <CanvasRevealEffect
@@ -35,7 +63,7 @@ const Approach = () => {
             containerClassName="bg-sky-600"
             colors={[[125, 211, 252]]}
           />
-        </Card>
+        </Card> */}
       </div>
     </section>
   );
