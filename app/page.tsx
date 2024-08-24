@@ -1,15 +1,12 @@
 import Approach from "@/components/Approach";
 import Clients from "@/components/Clients";
 import Experience from "@/components/Experience";
+import Footer from "@/components/Footer";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNav";
-import { ModeToggle } from "@/components/ui/Toggle";
 import { navItems } from "@/data";
-import { useTheme } from "next-themes";
-import Image from "next/image";
-import { FaHome } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -22,6 +19,7 @@ export default function Home() {
         <Clients />
         <Experience />
         <Approach />
+        <Footer />
       </div>
     </main>
   );
