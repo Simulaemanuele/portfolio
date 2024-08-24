@@ -1,3 +1,5 @@
+export const enable = false;
+
 export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },

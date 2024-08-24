@@ -9,6 +9,8 @@ import { useTheme } from "next-themes";
 const Footer = () => {
   const { theme } = useTheme();
 
+  console.log("theme: ", theme);
+
   const mailRedirect = () => {
     const link = "mailto:simulaemanuele@gmail.com";
 
@@ -49,14 +51,14 @@ const Footer = () => {
           {socialMedia.map(({ id, imgBlack, imgWhite }, idx) => (
             <div
               key={id + idx}
-              className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-150 bg-opacity-75 dark:bg-black-200 rounded-lg border border-black-300"
+              className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-150 bg-opacity-75 dark:bg-black-200 bg-white-200 rounded-lg border border-black-300 shadow"
             >
-              <img
-                src={theme === "dark" ? imgBlack : imgWhite}
-                alt={theme === "dark" ? imgBlack : imgWhite}
-                height={20}
-                width={20}
-              />
+              {theme === "dark" && (
+                <img src={imgBlack} alt={imgBlack} height={20} width={20} />
+              )}
+              {theme === "light" && (
+                <img src={imgWhite} alt={imgWhite} height={20} width={20} />
+              )}
             </div>
           ))}
         </div>

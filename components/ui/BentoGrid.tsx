@@ -89,16 +89,22 @@ export const BentoGridItem = ({
     <div
       id={id?.toString()}
       className={cn(
-        "text-white row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 lg:shadow-2xl lg:shadow-black-200",
+        "dark:text-white row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 lg:shadow-2xl lg:shadow-black-200",
         className
       )}
       style={{
-        background: "rgb(4,7,29)",
+        background: theme === "dark" ? "rgb(4,7,29)" : "rgb(245,245,244)",
         backgroundColor:
-          "linear-gradient(90deg, rgba(4,7,29,1) 0% rgba(12,14,35,1) 100%)",
+          theme === "dark"
+            ? "linear-gradient(90deg, rgba(4,7,29,1) 0% rgba(12,14,35,1) 100%)"
+            : "linear-gradient(90deg, rgba(245,245,244,1) 0% rgba(244,245,245,1) 100%)",
       }}
     >
-      <div className={`${id === 6 && "flex justify-center"} h-full`}>
+      <div
+        className={`${id === 6 && "flex justify-center"} ${
+          id === 1 && "dark:text-white text-stone-100"
+        } ${id === 6 && "dark:text-white text-stone-100"} h-full`}
+      >
         <div className="w-full h-full absolute">
           {img && (
             <img
@@ -133,7 +139,11 @@ export const BentoGridItem = ({
             "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
           )}
         >
-          <div className="font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base z-10">
+          <div
+            className={`font-sans font-extralight text-[${
+              theme === "dark" ? "#c1c2d3" : "#c1cfdf"
+            }] text-sm md:text-xs lg:text-base z-10`}
+          >
             {description}
           </div>
           <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10">
