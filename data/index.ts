@@ -207,6 +207,39 @@ export const workExperience = [
     // },
 ];
 
+export const approach = [
+    {
+        id: 1,
+        title: "Planning & Strategy",
+        order: "Phase 1",
+        des: "We'll collaborate to map out your website's goals, target audience, and key functionalities. We'll discuss things like site structure, navigation, and content requirements.",
+        animationSpeed: 5.1,
+        containerClassName: "bg-emerald-900",
+    },
+    {
+        id: 2,
+        title: "Development & Progress Update",
+        order: "Phase 2",
+        des: "Once we agree on the plan, I cue my lofi playlist and dive into coding. From initial sketches to polished code, I keep you updated every step of the way.",
+        animationSpeed: 3,
+        containerClassName: "bg-pink-900",
+        colors: [
+            [255, 166, 158],
+            [221, 255, 247],
+        ],
+        dotSize: 2
+    },
+    {
+        id: 3,
+        title: "Development & Launch",
+        order: "Phase 3",
+        des: "This is where the magic happens! Based on the approved design, I'll translate everything into functional code, building your website from the ground up.",
+        animationSpeed: 3,
+        containerClassName: "bg-sky-600",
+        colors: [[125, 211, 252]]
+    },
+]
+
 export const socialMedia = [
     {
         id: 1,
