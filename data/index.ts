@@ -1,5 +1,23 @@
 export const enable = false;
 
+export const loadingStates = [
+    {
+        text: "Loading images"
+    },
+    {
+        text: "Loading dimension core"
+    },
+    {
+        text: "Quantic engine START"
+    },
+    {
+        text: "Wait a moment please..."
+    },
+    {
+        text: "Almost there..."
+    },
+]
+
 export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },

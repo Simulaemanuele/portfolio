@@ -9,8 +9,6 @@ import { useTheme } from "next-themes";
 const Footer = () => {
   const { theme } = useTheme();
 
-  console.log("theme: ", theme);
-
   const mailRedirect = () => {
     const link = "mailto:simulaemanuele@gmail.com";
 
