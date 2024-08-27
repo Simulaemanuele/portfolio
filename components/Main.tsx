@@ -8,26 +8,22 @@ import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNav";
-import { MultiStepLoader as Loader } from "@/components/ui/MultiStepLoader";
-import { enable, loadingStates, navItems } from "@/data";
-import { useEffect, useState } from "react";
-import MagicButton from "./ui/MagicButton";
-import Spinner from "./ui/Spinner";
+import { enable, navItems } from "@/data";
+import { useState } from "react";
+import { MultiStepLoaderContainer } from "./LoaderContainer";
 
 export default function Main() {
   const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsMounted(true);
-    }, 3000);
-    return () => clearTimeout(timer);
-  }, []);
+  const [loading, setLoading] = useState(true);
 
   if (isMounted === false) {
     return (
       <>
-        <Spinner />
+        <MultiStepLoaderContainer
+          loading={loading}
+          setLoading={setLoading}
+          setIsMounted={setIsMounted}
+        />
       </>
     );
   }

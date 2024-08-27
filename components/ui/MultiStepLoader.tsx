@@ -58,7 +58,7 @@ const LoaderCore = ({
             className={cn("text-left flex gap-2 mb-4")}
             initial={{ opacity: 0, y: -(value * 40) }}
             animate={{ opacity: opacity, y: -(value * 40) }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.35 }}
           >
             <div>
               {index > value && (
@@ -94,11 +94,15 @@ export const MultiStepLoader = ({
   loading,
   duration = 2000,
   loop = true,
+  setLoading,
+  setIsMounted,
 }: {
   loadingStates: LoadingState[];
   loading?: boolean;
   duration?: number;
   loop?: boolean;
+  setLoading: React.Dispatch<React.SetStateAction<boolean>>;
+  setIsMounted: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
   const [currentState, setCurrentState] = useState(0);
 
@@ -115,6 +119,10 @@ export const MultiStepLoader = ({
             : prevState + 1
           : Math.min(prevState + 1, loadingStates.length - 1)
       );
+      if (currentState === loadingStates.length - 1) {
+        setLoading(false);
+        setIsMounted(true);
+      }
     }, duration);
 
     return () => clearTimeout(timeout);
