@@ -87,3 +87,12 @@
     background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
   }
 }
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
