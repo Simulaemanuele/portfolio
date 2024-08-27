@@ -39,16 +39,20 @@ const Footer = () => {
           Copyright © 2024 | Emanuele Simula
         </p>
         <div className="flex items-center md:gap-3 gap-6">
-          {socialMedia.map(({ id, imgBlack, imgWhite }, idx) => (
+          {socialMedia.map(({ id, imgBlack, imgWhite, link }, idx) => (
             <div
               key={id + idx}
               className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-150 bg-opacity-75 dark:bg-black-200 bg-white-200 rounded-lg border border-black-300 shadow"
             >
               {theme === "dark" && (
-                <img src={imgBlack} alt={imgBlack} height={20} width={20} />
+                <div onClick={() => window.open(link, "_blank")}>
+                  <img src={imgBlack} alt={imgBlack} height={20} width={20} />
+                </div>
               )}
               {theme === "light" && (
-                <img src={imgWhite} alt={imgWhite} height={20} width={20} />
+                <div onClick={() => window.open(link, "_blank")}>
+                  <img src={imgWhite} alt={imgWhite} height={20} width={20} />
+                </div>
               )}
             </div>
           ))}

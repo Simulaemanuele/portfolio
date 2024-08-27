@@ -250,11 +250,13 @@ export const socialMedia = [
     {
         id: 1,
         imgBlack: "/gitBlack.svg",
-        imgWhite: "/gitWhite.svg"
+        imgWhite: "/gitWhite.svg",
+        link: "https://github.com/Simulaemanuele"
     },
     {
         id: 2,
         imgBlack: "/linkBlack.svg",
-        imgWhite: "/linkWhite.svg"
+        imgWhite: "/linkWhite.svg",
+        link: "https://www.linkedin.com/in/emanuele-simula/"
     },
 ];
