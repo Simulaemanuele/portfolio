@@ -1,6 +1,9 @@
-import { MultiStepLoaderContainer } from "@/components/LoaderContainer";
 import Main from "@/components/Main";
+import { appWithTranslation } from "next-i18next";
+import "../i18n";
 
-export default function Home() {
+function Home() {
   return <Main />;
 }
+
+export default appWithTranslation(Home);

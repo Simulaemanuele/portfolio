@@ -2,6 +2,7 @@
 import { cn } from "@/utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import { useTranslation } from "next-i18next";
 
 const CheckIcon = ({ className }: { className?: string }) => {
   return (
@@ -46,6 +47,7 @@ const LoaderCore = ({
   loadingStates: LoadingState[];
   value?: number;
 }) => {
+  const { t } = useTranslation();
   return (
     <div className="flex relative justify-start max-w-xl mx-auto flex-col mt-40">
       {loadingStates.map((loadingState, index) => {
@@ -80,7 +82,7 @@ const LoaderCore = ({
                 value === index && "text-black dark:text-violet-700 opacity-100"
               )}
             >
-              {loadingState.text}
+              {t(loadingState.text)}
             </span>
           </motion.div>
         );
