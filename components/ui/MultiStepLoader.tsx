@@ -48,6 +48,12 @@ const LoaderCore = ({
   value?: number;
 }) => {
   const { t } = useTranslation();
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   return (
     <div className="flex relative justify-start max-w-xl mx-auto flex-col mt-40">
       {loadingStates.map((loadingState, index) => {
@@ -82,7 +88,7 @@ const LoaderCore = ({
                 value === index && "text-black dark:text-violet-700 opacity-100"
               )}
             >
-              {t(loadingState.text)}
+              {isClient ? t(loadingState.text) : loadingState.text}
             </span>
           </motion.div>
         );
