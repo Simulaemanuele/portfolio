@@ -9,6 +9,7 @@ import {
 import { cn } from "@/utils/cn";
 import Link from "next/link";
 import { ModeToggle } from "./Toggle";
+import { useTranslation } from "next-i18next";
 
 export const FloatingNav = ({
   navItems,
@@ -24,6 +25,8 @@ export const FloatingNav = ({
   const { scrollYProgress } = useScroll();
 
   const [visible, setVisible] = useState(false);
+
+  const { t } = useTranslation();
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     if (typeof current === "number") {
@@ -69,7 +72,7 @@ export const FloatingNav = ({
             )}
           >
             <span className="block sm:hidden">{navItem.icon}</span>
-            <span className="text-sm !cursor-pointer">{navItem.name}</span>
+            <span className="text-sm !cursor-pointer">{t(navItem.name)}</span>
           </Link>
         ))}
         {/*Login button decomment if needed*/}

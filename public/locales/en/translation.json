@@ -3,5 +3,9 @@
   "loadingDimensionCore": "Loading dimension core",
   "quanticEnergyStart": "Quantic engine START",
   "waiting": "Wait a moment please...",
-  "longingWait": "Almost there..."
+  "longingWait": "Almost there...",
+  "About": "About",
+  "Projects": "Projects",
+  "Testimonials": "Testimonials",
+  "Contact": "Contact"
 }
