@@ -9,6 +9,7 @@ import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
 import { useTheme } from "next-themes";
+import { useTranslation } from "next-i18next";
 
 export const BentoGrid = ({
   className,
@@ -31,8 +32,8 @@ export const BentoGrid = ({
 
 export const BentoGridItem = ({
   className,
-  title,
-  description,
+  title = "",
+  description = "",
   id,
   img,
   imgClassName,
@@ -40,8 +41,8 @@ export const BentoGridItem = ({
   spareImg,
 }: {
   className?: string;
-  title?: string | React.ReactNode;
-  description?: string | React.ReactNode;
+  title?: string;
+  description?: string;
   header?: React.ReactNode;
   icon?: React.ReactNode;
   id?: number;
@@ -52,6 +53,7 @@ export const BentoGridItem = ({
 }) => {
   const [copied, setCopied] = useState(false);
   const { theme } = useTheme();
+  const { t } = useTranslation();
 
   const handleCopy = () => {
     const text = "simulaemanuele@gmail.com";
@@ -144,10 +146,10 @@ export const BentoGridItem = ({
               theme === "dark" ? "#c1c2d3" : "#c1cfdf"
             }] text-sm md:text-xs lg:text-base z-10`}
           >
-            {description}
+            {t(description)}
           </div>
           <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10">
-            {title}
+            {t(title)}
           </div>
 
           {id === 2 && <GridGlobe />}
@@ -185,7 +187,7 @@ export const BentoGridItem = ({
                 <Lottie options={defaultOptions} />
               </div>
               <MagicButton
-                title={copied ? "Email copied" : "Copy my email"}
+                title={t(copied ? "email_copied" : "copy_my_email")}
                 icon={<IoCopyOutline />}
                 position="left"
                 otherClasses={`bg-[#161a31]`}

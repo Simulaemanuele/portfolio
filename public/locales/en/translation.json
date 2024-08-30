@@ -7,5 +7,15 @@
   "About": "About",
   "Projects": "Projects",
   "Testimonials": "Testimonials",
-  "Contact": "Contact"
+  "Contact": "Contact",
+  "client_collaboration": "I prioritize client collaboration, fostering open communication",
+  "time_zone_flexibility": "I'm very flexible with time zone communications",
+  "tech_stack": "My tech stack",
+  "tech_enthusiast": "Tech enthusiast with a passion for development.",
+  "wip_project": "Currently building Figma clone for demonstrative purposes.",
+  "start_project": "Do you want to start a project together?",
+  "constant_improvement": "I constantly try to improve",
+  "inside_scoop": "The Inside Scoop",
+  "email_copied": "Email copied",
+  "copy_my_email": "Copy my email"
 }
