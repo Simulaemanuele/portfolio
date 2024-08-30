@@ -17,5 +17,17 @@
   "constant_improvement": "Cerco costantemente di migliorare",
   "inside_scoop": "Cosa bolle in pentola",
   "email_copied": "Email copiata",
-  "copy_my_email": "Copia la mia email"
+  "copy_my_email": "Copia la mia email",
+  "recent_projects_1": "Una piccola selezione di",
+  "recent_projects_2": "progetti recenti",
+  "animated_iphone_title": "Sito web 3D animato di Apple iPhone",
+  "animated_iphone_description": "Ricreato il sito web di Apple iPhone 15 Pro, combinando animazioni GSAP e effetti 3D di Three.js.",
+  "brainwave_title": "Brainwave",
+  "brainwave_description": "Sito web di chat AI professionale e moderno, Brainwave, utilizzando Tailwind, React e Vite.",
+  "the_world_title": "The World",
+  "the_world_description": "Un modello 3D interattivo creato in Three.js della Terra.",
+  "movie_app_title": "Movie App",
+  "movie_app_description": "Un progetto React Native di un'app di streaming fittizia.",
+  "check_live_site": "Controlla il sito",
+  "download_apk": "Scarica l'APK"
 }

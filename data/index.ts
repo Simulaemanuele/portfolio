@@ -93,8 +93,8 @@ export const projects = [
 
     {
         id: 1,
-        title: "Animated Apple Iphone 3D Website",
-        des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+        title: "animated_iphone_title",
+        des: "animated_iphone_description",
         img: "/p4.svg",
         iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
         link: "https://iphone15-apple-clone.netlify.app/",
@@ -102,8 +102,8 @@ export const projects = [
     },
     {
         id: 2,
-        title: "Brainwave",
-        des: "Professional and modern design AI Chat website Brainwave, using Tailwind, React and Vite",
+        title: "brainwave_title",
+        des: "brainwave_description",
         img: "/brain.svg",
         iconLists: ["/react.svg", "/tail.svg", "/js.svg", "/vite.svg"],
         link: "https://brainwave-look-a-like.netlify.app/",
@@ -111,8 +111,8 @@ export const projects = [
     },
     {
         id: 3,
-        title: "The World",
-        des: "An interactive 3D model builded in Three.js of the Earth",
+        title: "the_world_title",
+        des: "the_world_description",
         img: "/world-3d.svg",
         iconLists: ["/three.svg", "/js.svg"],
         link: "https://three-world-3d.netlify.app/",
@@ -120,8 +120,8 @@ export const projects = [
     },
     {
         id: 4,
-        title: "Movie App",
-        des: "A react native project of a fake streaming app",
+        title: "movie_app_title",
+        des: "movie_app_description",
         img: "/movie-app-smaller.svg",
         iconLists: ["/react-native.svg"],
         link: "https://github.com/Simulaemanuele/MoviesApp/tree/deploy",

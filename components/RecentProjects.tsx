@@ -5,16 +5,18 @@ import React from "react";
 import { PinContainer } from "./ui/Pin";
 import { FaLocationArrow } from "react-icons/fa6";
 import { useTheme } from "next-themes";
+import { useTranslation } from "next-i18next";
 
 const RecentProjects = () => {
   const { theme } = useTheme();
+  const { t } = useTranslation();
 
   return (
     <section id="projects" className="py-20">
       <h1 className="heading">
-        A small selection of{" "}
+        {t("recent_projects_1")}{" "}
         <span className="dark:text-purple text-violet-950">
-          recent projects
+          {t("recent_projects_2")}
         </span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
@@ -41,10 +43,10 @@ const RecentProjects = () => {
                   />
                 </div>
                 <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
-                  {title}
+                  {t(title)}
                 </h1>
                 <p className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2">
-                  {des}
+                  {t(des)}
                 </p>
 
                 <div className="flex items-center justify-between mt-7 mb-3">
@@ -61,9 +63,11 @@ const RecentProjects = () => {
                   </div>
                   <div className="flex items-center justify-center">
                     <p className="flex lg:text-xl md:text-xs text-sm dark:text-purple text-violet-950">
-                      {type && type === "webapp"
-                        ? "Check Live Site"
-                        : "Download the APK"}
+                      {t(
+                        type && type === "webapp"
+                          ? "check_live_site"
+                          : "download_apk"
+                      )}
                     </p>
                     <FaLocationArrow
                       className="ms-3"
