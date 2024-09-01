@@ -10,10 +10,12 @@ import { cn } from "@/utils/cn";
 import Link from "next/link";
 import { ModeToggle } from "./Toggle";
 import { useTranslation } from "next-i18next";
+import SwitchLanguage from "./SwitchLanguage";
 
 export const FloatingNav = ({
   navItems,
   className,
+  setSpinnerLoading,
 }: {
   navItems: {
     name: string;
@@ -21,6 +23,7 @@ export const FloatingNav = ({
     icon?: JSX.Element;
   }[];
   className?: string;
+  setSpinnerLoading: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
   const { scrollYProgress } = useScroll();
 
@@ -81,6 +84,7 @@ export const FloatingNav = ({
           <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
         </button> */}
         <ModeToggle />
+        <SwitchLanguage setSpinnerLoading={setSpinnerLoading} />
       </motion.div>
     </AnimatePresence>
   );

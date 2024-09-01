@@ -21,6 +21,7 @@ function getPreferredLocale(acceptLanguageHeader: string | null): Locale {
 export function middleware(req: NextRequest) {
     const { pathname } = req.nextUrl;
 
+    // Ignora le richieste a percorsi specifici
     if (pathname.startsWith('/_next') || pathname.includes('.')) {
         return NextResponse.next();
     }
@@ -28,13 +29,16 @@ export function middleware(req: NextRequest) {
     const acceptLanguageHeader = req.headers.get('accept-language');
     const locale = getPreferredLocale(acceptLanguageHeader);
 
+    // Reindirizza l'utente alla versione localizzata se necessario
     if (!pathname.startsWith(`/${locale}`)) {
-        return NextResponse.redirect(new URL(`/${locale}${pathname}`, req.url));
+        const url = new URL(`/${locale}${pathname}`, req.url);
+        return NextResponse.redirect(url);
     }
 
     return NextResponse.next();
 }
 
+// Configurazione del middleware per applicarlo a tutte le route
 export const config = {
     matcher: ['/((?!api|_next|.*\\..*).*)'],
 };
