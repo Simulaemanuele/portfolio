@@ -35,5 +35,16 @@
   "frontend_engineer_mobile_intern_title": "Frontend Engineer Mobile Intern",
   "frontend_engineer_mobile_intern_description": "As a part of a team, I assisted in the development of a mobile home banking app using React Native, performing a complete redesign, enhancing performance, and implementing features.",
   "frontend_engineer_microfrontend_title": "Frontend Engineer Microfrontend",
-  "frontend_engineer_microfrontend_description": "As part of a team, I developed many frontends that were wrapped in a backend wrapper, for a banking client."
+  "frontend_engineer_microfrontend_description": "As part of a team, I developed many frontends that were wrapped in a backend wrapper, for a banking client.",
+  "header_approach_1": "My",
+  "header_approach_2": "approach",
+  "phase_1_title": "Planning & Strategy",
+  "phase_1_order": "Phase 1",
+  "phase_1_description": "We'll collaborate to map out your website's goals, target audience, and key functionalities. We'll discuss things like site structure, navigation, and content requirements.",
+  "phase_2_title": "Development & Progress Update",
+  "phase_2_order": "Phase 2",
+  "phase_2_description": "Once we agree on the plan, I cue my lofi playlist and dive into coding. From initial sketches to polished code, I keep you updated every step of the way.",
+  "phase_3_title": "Development & Launch",
+  "phase_3_order": "Phase 3",
+  "phase_3_description": "This is where the magic happens! Based on the approved design, I'll translate everything into functional code, building your app from the ground up."
 }

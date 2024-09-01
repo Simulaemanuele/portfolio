@@ -216,17 +216,17 @@ export const workExperience = [
 export const approach = [
     {
         id: 1,
-        title: "Planning & Strategy",
-        order: "Phase 1",
-        des: "We'll collaborate to map out your website's goals, target audience, and key functionalities. We'll discuss things like site structure, navigation, and content requirements.",
+        title: "phase_1_title",
+        order: "phase_1_order",
+        des: "phase_1_description",
         animationSpeed: 5.1,
         containerClassName: "bg-emerald-900",
     },
     {
         id: 2,
-        title: "Development & Progress Update",
-        order: "Phase 2",
-        des: "Once we agree on the plan, I cue my lofi playlist and dive into coding. From initial sketches to polished code, I keep you updated every step of the way.",
+        title: "phase_2_title",
+        order: "phase_2_order",
+        des: "phase_2_description",
         animationSpeed: 3,
         containerClassName: "bg-pink-900",
         colors: [
@@ -237,9 +237,9 @@ export const approach = [
     },
     {
         id: 3,
-        title: "Development & Launch",
-        order: "Phase 3",
-        des: "This is where the magic happens! Based on the approved design, I'll translate everything into functional code, building your website from the ground up.",
+        title: "phase_3_title",
+        order: "phase_3_order",
+        des: "phase_3_description",
         animationSpeed: 3,
         containerClassName: "bg-sky-600",
         colors: [[125, 211, 252]]

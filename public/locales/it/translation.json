@@ -35,5 +35,16 @@
   "frontend_engineer_mobile_intern_title": "Stagista Mobile Frontend Engineer",
   "frontend_engineer_mobile_intern_description": "Come parte di un team, ho contribuito allo sviluppo di un'app mobile di home banking utilizzando React Native, eseguendo un completo redesign, migliorando le prestazioni e implementando nuove funzionalità.",
   "frontend_engineer_microfrontend_title": "Frontend Engineer Microfrontend",
-  "frontend_engineer_microfrontend_description": "Come parte di un team, ho sviluppato molti frontend che sono stati avvolti in un wrapper backend, per un cliente nel settore bancario."
+  "frontend_engineer_microfrontend_description": "Come parte di un team, ho sviluppato molti frontend che sono stati avvolti in un wrapper backend, per un cliente nel settore bancario.",
+  "header_approach_1": "Il mio",
+  "header_approach_2": "approccio",
+  "phase_1_title": "Pianificazione e Strategia",
+  "phase_1_order": "Fase 1",
+  "phase_1_description": "Collaboreremo per definire gli obiettivi del tuo sito web, il pubblico target e le funzionalità chiave. Discuteremo aspetti come la struttura del sito, la navigazione e le esigenze di contenuto.",
+  "phase_2_title": "Sviluppo e Aggiornamento dei Progressi",
+  "phase_2_order": "Fase 2",
+  "phase_2_description": "Una volta concordato il piano, metto in coda la mia playlist lofi e inizio a programmare. Dalle prime bozze al codice rifinito, ti terrò aggiornato in ogni fase del percorso.",
+  "phase_3_title": "Sviluppo e Lancio",
+  "phase_3_order": "Fase 3",
+  "phase_3_description": "Qui avviene la magia! Basandomi sul design approvato, tradurrò tutto in codice funzionale e funzionante, costruendo la tua app da zero."
 }
