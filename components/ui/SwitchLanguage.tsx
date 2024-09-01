@@ -27,6 +27,7 @@ function SwitchLanguage({
   const changeLanguage = (lng: string) => {
     setSpinnerLoading(true);
     i18n.changeLanguage(lng);
+    sessionStorage.setItem("compareLang", lng);
     setTimeout(() => {
       setSpinnerLoading(false);
     }, 1000);

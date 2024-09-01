@@ -16,6 +16,8 @@ export const TextGenerateEffect = ({
 }) => {
   const [scope, animate] = useAnimate();
   let wordsArray = words.split(" ");
+  const lang = localStorage.getItem("i18nextLng");
+
   useEffect(() => {
     animate(
       "span",
@@ -38,7 +40,13 @@ export const TextGenerateEffect = ({
             <motion.span
               key={word + idx}
               className={`${
-                idx > 7 ? "text-[#fff482]" : "dark:text-white text-black"
+                lang === "it"
+                  ? idx > 7
+                    ? "text-[#fff482]"
+                    : "dark:text-white text-black"
+                  : idx > 6
+                  ? "text-[#fff482]"
+                  : "dark:text-white text-black"
               } opacity-0`}
               style={{
                 filter: filter ? "blur(10px)" : "none",

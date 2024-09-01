@@ -11,7 +11,7 @@ const Footer = () => {
   const { theme } = useTheme();
   const { t } = useTranslation();
   console.log("window: ", window);
-  const lang = window.navigator.language;
+  const lang = localStorage.getItem("i18nextLng");
 
   const mailRedirect = () => {
     const link = "mailto:simulaemanuele@gmail.com";
@@ -24,9 +24,9 @@ const Footer = () => {
         <h1 className="heading lg:max-w-[45vw]">
           {t("header_footer_1")}{" "}
           <span className="dark:text-[#fff482] text-purple">
-            {t("header_footer_2")}
+            {t("header_footer_2")}{" "}
           </span>
-          {lang === "it-IT" && " "}
+          {lang === "it" && " "}
           {t("header_footer_3")}
         </h1>
         <p className="dark:text-white-200 md:mt-10 my-5 text-center">

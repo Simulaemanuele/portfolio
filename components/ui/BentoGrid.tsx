@@ -54,6 +54,7 @@ export const BentoGridItem = ({
   const [copied, setCopied] = useState(false);
   const { theme } = useTheme();
   const { t } = useTranslation();
+  const lang = localStorage.getItem("i18nextLng");
 
   const handleCopy = () => {
     const text = "simulaemanuele@gmail.com";
@@ -148,7 +149,9 @@ export const BentoGridItem = ({
           >
             {t(description)}
           </div>
-          <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10">
+          <div
+            className={`font-sans font-bold text-lg lg:text-3xl max-w-96 z-10 `}
+          >
             {t(title)}
           </div>
 
