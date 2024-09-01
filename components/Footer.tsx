@@ -5,9 +5,13 @@ import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa6";
 import { socialMedia } from "@/data";
 import { useTheme } from "next-themes";
+import { useTranslation } from "next-i18next";
 
 const Footer = () => {
   const { theme } = useTheme();
+  const { t } = useTranslation();
+  console.log("window: ", window);
+  const lang = window.navigator.language;
 
   const mailRedirect = () => {
     const link = "mailto:simulaemanuele@gmail.com";
@@ -18,17 +22,19 @@ const Footer = () => {
     <footer className="w-full pb-10 mb-[100px] md:mb-5" id="contact">
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
-          Ready to take{" "}
-          <span className="dark:text-purple text-violet-950">your</span> digital
-          presence to the next level?
+          {t("header_footer_1")}{" "}
+          <span className="dark:text-purple text-violet-950">
+            {t("header_footer_2")}
+          </span>
+          {lang === "it-IT" && " "}
+          {t("header_footer_3")}
         </h1>
         <p className="dark:text-white-200 md:mt-10 my-5 text-center">
-          Reach out to me today and let&apos;s discuss how I can help you achive
-          your goals.
+          {t("footer_paragraph")}
         </p>
 
         <MagicButton
-          title="Let's get in touch"
+          title={t("redirect_button")}
           icon={<FaLocationArrow />}
           position="right"
           handleClick={mailRedirect}
