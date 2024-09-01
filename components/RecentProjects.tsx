@@ -15,7 +15,7 @@ const RecentProjects = () => {
     <section id="projects" className="py-20">
       <h1 className="heading">
         {t("recent_projects_1")}{" "}
-        <span className="dark:text-purple text-violet-950">
+        <span className="dark:text-[#fff482] text-purple">
           {t("recent_projects_2")}
         </span>
       </h1>
@@ -62,7 +62,7 @@ const RecentProjects = () => {
                     ))}
                   </div>
                   <div className="flex items-center justify-center">
-                    <p className="flex lg:text-xl md:text-xs text-sm dark:text-purple text-violet-950">
+                    <p className="flex lg:text-xl md:text-xs text-sm dark:text-[#fff482] text-purple">
                       {t(
                         type && type === "webapp"
                           ? "check_live_site"
@@ -71,7 +71,7 @@ const RecentProjects = () => {
                     </p>
                     <FaLocationArrow
                       className="ms-3"
-                      color={`${theme === "dark" ? "#CBACE9" : "#2e1065"}`}
+                      color={`${theme === "dark" ? "#fff482" : "#cbacf9"}`}
                     />
                   </div>
                 </div>

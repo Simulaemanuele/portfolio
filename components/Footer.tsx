@@ -23,7 +23,7 @@ const Footer = () => {
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
           {t("header_footer_1")}{" "}
-          <span className="dark:text-purple text-violet-950">
+          <span className="dark:text-[#fff482] text-purple">
             {t("header_footer_2")}
           </span>
           {lang === "it-IT" && " "}

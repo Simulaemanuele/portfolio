@@ -12,7 +12,7 @@ const Approach = () => {
     <section className="w-full py-20">
       <h1 className="heading">
         {t("header_approach_1")}{" "}
-        <span className="dark:text-purple text-violet-950">
+        <span className="dark:text-[#fff482] text-purple">
           {t("header_approach_2")}
         </span>
       </h1>

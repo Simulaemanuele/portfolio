@@ -14,7 +14,7 @@ const Experience = () => {
     <section className="py-20" id="testimonials">
       <h1 className="heading">
         {t("header_experience_1")}
-        <span className="dark:text-purple text-violet-950">
+        <span className="dark:text-[#fff482] text-purple">
           {" "}
           {t("header_experience_2")}
         </span>
@@ -35,7 +35,7 @@ const Experience = () => {
                   className="lg:w-32 md:w-20 w-16"
                 />
                 <div className="lg:ms-5">
-                  <h1 className="text-start text-xl md:text-2xl font-bold dark:text-white text-violet-950">
+                  <h1 className="text-start text-xl md:text-2xl font-bold dark:text-[#fff482] text-purple">
                     {t(title)}
                   </h1>
                   <p className="text-start dark:text-white-100 text-black mt-3 font-semibold">
