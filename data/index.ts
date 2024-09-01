@@ -199,15 +199,15 @@ export const companies = [
 export const workExperience = [
     {
         id: 1,
-        title: "Frontend Engineer Mobile Intern",
-        desc: "As a part of a team, I was assisted in the development of a mobile home banking app using React Native performing a complete redesign, enhancing performance and implementing features.",
+        title: "frontend_engineer_mobile_intern_title",
+        desc: "frontend_engineer_mobile_intern_description",
         className: "md:col-span-2",
         thumbnail: "/exp1.svg",
     },
     {
         id: 2,
-        title: "Frontend Engineer Microfrontend",
-        desc: "As part of a team, I developed many frontends that were wrapped in a backend wrapper, for a banking client.",
+        title: "frontend_engineer_microfrontend_title",
+        desc: "frontend_engineer_microfrontend_description",
         className: "md:col-span-2", // change to md:col-span-2
         thumbnail: "/exp2.svg",
     },

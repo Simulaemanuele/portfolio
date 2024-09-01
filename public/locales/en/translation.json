@@ -29,5 +29,11 @@
   "movie_app_title": "Movie App",
   "movie_app_description": "A React Native project of a fake streaming app.",
   "check_live_site": "Check Live Site",
-  "download_apk": "Download the APK"
+  "download_apk": "Download the APK",
+  "header_experience_1": "My",
+  "header_experience_2": "work experience",
+  "frontend_engineer_mobile_intern_title": "Frontend Engineer Mobile Intern",
+  "frontend_engineer_mobile_intern_description": "As a part of a team, I assisted in the development of a mobile home banking app using React Native, performing a complete redesign, enhancing performance, and implementing features.",
+  "frontend_engineer_microfrontend_title": "Frontend Engineer Microfrontend",
+  "frontend_engineer_microfrontend_description": "As part of a team, I developed many frontends that were wrapped in a backend wrapper, for a banking client."
 }

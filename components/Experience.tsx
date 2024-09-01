@@ -4,16 +4,19 @@ import { workExperience } from "@/data";
 import React from "react";
 import { Button } from "./ui/MovingBorders";
 import { useTheme } from "next-themes";
+import { useTranslation } from "next-i18next";
 
 const Experience = () => {
   const { theme } = useTheme();
+  const { t } = useTranslation();
+
   return (
     <section className="py-20" id="testimonials">
       <h1 className="heading">
-        My
+        {t("header_experience_1")}
         <span className="dark:text-purple text-violet-950">
           {" "}
-          work experience
+          {t("header_experience_2")}
         </span>
       </h1>
       <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
@@ -33,10 +36,10 @@ const Experience = () => {
                 />
                 <div className="lg:ms-5">
                   <h1 className="text-start text-xl md:text-2xl font-bold dark:text-white text-violet-950">
-                    {title}
+                    {t(title)}
                   </h1>
                   <p className="text-start dark:text-white-100 text-black mt-3 font-semibold">
-                    {desc}
+                    {t(desc)}
                   </p>
                 </div>
               </div>
