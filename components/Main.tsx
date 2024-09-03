@@ -9,9 +9,8 @@ import Hero from "@/components/Hero";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { enable, navItems } from "@/data";
-import { useLayoutEffect, useState } from "react";
+import { useState } from "react";
 import { MultiStepLoaderContainer } from "./LoaderContainer";
-import { useTranslation } from "next-i18next";
 import Spinner from "./ui/Spinner";
 
 export default function Main() {

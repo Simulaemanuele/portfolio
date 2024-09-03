@@ -50,7 +50,11 @@ const LoaderCore = ({
   const { t, i18n } = useTranslation();
   const [isClient, setIsClient] = useState(false);
 
-  const compareLang = sessionStorage.getItem("compareLang");
+  let compareLang: string | null = "";
+
+  if (typeof window !== "undefined") {
+    compareLang = sessionStorage.getItem("compareLang");
+  }
 
   useEffect(() => {
     setIsClient(true);
