@@ -57,5 +57,6 @@
   "hero_head_paragraph": "Ciao, sono Emanuele, un Fullstack developer con base in Italia.",
   "hero_head_button": "Dai un'occhiata",
   "about_heading_1": "Chi sono",
-  "about_heading_2": "io"
+  "about_heading_2": "io",
+  "presentation": "Uno sviluppatore Fullstack! Che cos'è? È una figura che si occupa sia della parte visibile di un sito o un'applicazione (quella che l'utente vede e utilizza) sia di quella che sta dietro le quinte (la logica e il funzionamento interno). In pratica, creo interfacce che permettono agli utenti di interagire con l'applicazione e scrivo il codice che fa funzionare tutto, come gestire i dati o collegarsi a un server. Lo faccio sia per siti web che per app mobili, rendendo possibile la loro esecuzione su dispositivi come computer, smartphone o tablet."
 }

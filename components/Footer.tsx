@@ -44,7 +44,7 @@ const Footer = () => {
         <p className="md:text-base text-sm md:font-normal font-light">
           Copyright © 2024 | Emanuele Simula
         </p>
-        <div className="flex items-center md:gap-3 gap-6">
+        <div className="flex items-center md:gap-3 gap-6 lg:mt-0 md:mt-0 mt-10">
           {socialMedia.map(({ id, imgBlack, imgWhite, link }, idx) => (
             <div
               key={id + idx}

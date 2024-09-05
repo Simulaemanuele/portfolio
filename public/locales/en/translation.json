@@ -57,5 +57,6 @@
   "hero_head_paragraph": "Hi, I'm Emanuele, a Fullstack developer based in Italy.",
   "hero_head_button": "Take a look",
   "about_heading_1": "Who am",
-  "about_heading_2": "I"
+  "about_heading_2": "I",
+  "presentation": "A Fullstack developer! What is it? It’s someone who handles both the visible part of a website or app (the part users interact with) and the behind-the-scenes part (the internal logic and functionality). In simple terms, I create the interfaces that users see and interact with, and I also write the code that makes everything work, such as managing data or connecting to a server. I do this for both websites and mobile apps, making sure they run smoothly on devices like computers, smartphones, and tablets."
 }

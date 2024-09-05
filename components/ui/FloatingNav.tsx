@@ -26,23 +26,15 @@ export const FloatingNav = ({
   setSpinnerLoading: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
   const { scrollYProgress } = useScroll();
-
   const [visible, setVisible] = useState(false);
-
   const { t } = useTranslation();
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     if (typeof current === "number") {
-      let direction = current! - scrollYProgress.getPrevious()!;
-
-      if (scrollYProgress.get() < 0.05) {
-        setVisible(false);
+      if (scrollYProgress.get() > 0.05) {
+        setVisible(true);
       } else {
-        if (direction < 0) {
-          setVisible(true);
-        } else {
-          setVisible(false);
-        }
+        setVisible(false);
       }
     }
   });
@@ -78,11 +70,6 @@ export const FloatingNav = ({
             <span className="text-sm !cursor-pointer">{t(navItem.name)}</span>
           </Link>
         ))}
-        {/*Login button decomment if needed*/}
-        {/* <button className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full">
-          <span>Login</span>
-          <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
-        </button> */}
         <ModeToggle />
         <SwitchLanguage setSpinnerLoading={setSpinnerLoading} />
       </motion.div>
