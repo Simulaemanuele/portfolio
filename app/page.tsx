@@ -1,8 +1,10 @@
 "use client";
 
-import Main from "@/components/Main";
 import { appWithTranslation } from "next-i18next";
 import "../i18n";
+import dynamic from "next/dynamic";
+
+const Main = dynamic(() => import("@/components/Main"));
 
 function Home() {
   return <Main />;
